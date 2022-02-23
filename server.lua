@@ -6,6 +6,6 @@ RegisterCommand('cam', function(source, args)
     if xPlayer.job.name == "police" then 
         TriggerClientEvent("securitycam:client:ActiveCamera", src, tonumber(args[1]))
     else
-        TriggerClientEvent('esx:showNotification', src, 'You are not on duty!')
+        TriggerClientEvent('esx:showNotification', src, 'You are not a cop!')
     end
 end, false)
